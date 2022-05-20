@@ -1,5 +1,9 @@
-BlackbitIframePortletBundle_title_of_settings: Settings
-BlackbitIframePortletBundle_label_for_url: URL
-BlackbitIframePortletBundle_button_text: Save
-BlackbitIframePortletBundle_empty_url_error: Please set URL in settings
-BlackbitIframePortletBundle_portlet_name: IFrame (embed URL)
+PolargoldIFramePortletBundle_portlet_name: IFrame
+
+# Settings window
+PolargoldIFramePortletBundle_settings_title: Settings
+PolargoldIFramePortletBundle_settings_title_field: Title
+PolargoldIFramePortletBundle_settings_url_field: URL
+PolargoldIFramePortletBundle_settings_height_field: Height
+PolargoldIFramePortletBundle_settings_save: Save
+PolargoldIFramePortletBundle_settings_error_url: Please set an URL.

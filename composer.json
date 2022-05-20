@@ -1,27 +1,24 @@
 {
-  "name": "blackbit_digital_commerce/pimcore-iframe-portlet",
-  "description": "Add portlets to embed websites to Pimcore dashboards",
-  "minimum-stability": "stable",
-  "license": "GPL-3.0-or-later",
-  "type": "pimcore-bundle",
-  "homepage": "https://pimcore.blackbit.de",
-  "authors": [
-    {
-      "name": "Blackbit",
-      "email": "info@blackbit.de",
-      "role": "Developer"
+    "name": "polargold/pimcore-iframe-portlet-bundle",
+    "description": "Adds a portlet to add iframes to Pimcore dashboards",
+    "type": "pimcore-bundle",
+    "authors": [
+        {
+            "name": "Oliver Vollborn",
+            "email": "oliver@polargold.de",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Polargold\\PolargoldIFramePortletBundle\\": ""
+        }
+    },
+    "extra": {
+        "pimcore": {
+            "bundles": [
+                "Polargold\\PolargoldIFramePortletBundle\\PolargoldIFramePortletBundle"
+            ]
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Blackbit\\BlackbitIframePortletBundle\\": ""
-    }
-  },
-  "extra": {
-    "pimcore": {
-      "bundles": [
-        "Blackbit\\BlackbitIframePortletBundle\\BlackbitIframePortletBundle"
-      ]
-    }
-  }
 }

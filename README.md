@@ -1,17 +1,48 @@
-# Iframe Portlet Bundle
+# Polargold IFrame Portlet Bundle
 
-With this bundle you can embed websites into your Pimcore dashboard. 
+This [Pimcore](https://github.com/pimcore/pimcore) bundle adds a customizable IFrame portlet to the dashboard.<br />
+This is a fork from [BlackbitNeueMedien/pimcore-iframe-portlet](https://github.com/BlackbitNeueMedien/pimcore-iframe-portlet), customized for our needs.
 
-![Iframe in Pimcore dashboard portlet](doc/images/iframe-in-dashboard.png)
+## Preview
 
-The URL of the iframe is configurable in portlet settings.
+![Preview Image](Docs/preview.png)
 
-## Installation
 
-You can install the bundle with `composer require blackbit_digital_commerce/pimcore-iframe-portlet`. Later updates can be done via `composer update blackbit_digital_commerce/pimcore-iframe-portlet`.
+## Requirements
 
-Afterwards enable the bundle in the Pimcore admin area or run `bin/console pimcore:bundle:enable BlackbitIframePortletBundle`.
+This bundle was tested on Pimcore 10.x.
 
-## About Blackbit
 
-Beside of this Pimcore plugin Blackbit also offers [other bundles, individual development, consulting and hosting for your Pimcore project](https://pimcore.com/en/partners/find-a-solution-partner/blackbit_p79).
+## Setup
+
+To use this bundle, you need to install the composer package first.
+
+```shell
+composer require polargold/pimcore-iframe-portlet-bundle
+```
+
+Next, enable it by running:
+````shell
+bin/console pimcore:bundle:enable PolargoldIFramePortletBundle
+````
+
+The portlet should now be available after reloading the admin interface.
+
+
+## Usage
+
+First, add the portlet to your dashboard:
+
+![Add Portlet to dashboard](Docs/usage/add-portlet-to-dashboard.png)
+
+Then open the settings window:
+
+![Settings window](Docs/usage/settings-window.png)
+
+There you can specify 3 elements:
+- The title of the IFrame
+- The height of the IFrame
+- The URL from which the IFrame gets its content from.
+
+If you are changing the title or height of the IFrame, you need to reload the dashboard to see your changes.<br />
+URL changes will be rendered on save without reloading.
